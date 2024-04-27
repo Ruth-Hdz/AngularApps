@@ -1,0 +1,6 @@
+<app-lrhz-navbar-lrhz [titulo]="'Bucador de Noticias-lrhz'"></app-lrhz-navbar-lrhz>
+<div class="container">
+  <app-lrhz-formulario-lrhz (parametrosSeleccionados)="buscadorNoticias($event)"></app-lrhz-formulario-lrhz>
+  <app-lrhz-spinner-lrhz *ngIf="loading"></app-lrhz-spinner-lrhz>
+  <app-lrhz-listado-noticias-lrhz [listNoticias]="listNoticias"></app-lrhz-listado-noticias-lrhz>
+</div>
